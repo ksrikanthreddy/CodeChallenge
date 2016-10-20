@@ -1,0 +1,20 @@
+<md-sidenav-layout [class.m2app-dark]="isDarkTheme">
+
+  <md-toolbar color="primary">
+
+    Code Challenge
+
+    <span class="app-toolbar-filler"></span>
+    <button md-button (click)="isDarkTheme = !isDarkTheme">CHANGE THEME</button>
+  </md-toolbar>
+
+  <div class="app-content">
+	<router-outlet></router-outlet>  	
+</div>
+</md-sidenav-layout>
+
+<span class="app-action" [class.m2app-dark]="isDarkTheme">
+  <button md-fab><md-icon>check circle</md-icon></button>
+</span>
+  
+

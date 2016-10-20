@@ -1,0 +1,9 @@
+.app-toolbar-filler {
+  flex: 1 1 auto;
+}
+.app-action {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
