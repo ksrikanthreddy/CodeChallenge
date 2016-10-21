@@ -1,3 +1,29 @@
-<p>
-  movie works!
-</p>
+<md-card class="flex">
+
+	<div class="movie-poster">
+	<img [src]="moviePosterPath">
+</div>
+<div class="movie-details">
+	<span class="movie-title">{{movieTitle}} ({{movieReleaseDate}})</span>
+	<div>
+		<h3>Overview</h3>
+		<div [innerHtml]="movieOverview"></div>
+		<div style="width: 100%;">
+			<h3>Featured Crew</h3>
+			<md-grid-list cols="4" rowHeight="250px">
+		  <md-grid-tile *ngFor="let tile of movieCast" (click)="viewProfile(tile.id)">
+		    <img class="movie-crew-img" src="http://image.tmdb.org/t/p/w500/{{tile.profile_path}}">
+		    <md-grid-tile-footer>
+	        <h3>{{tile.name}}</h3>
+	      </md-grid-tile-footer>
+		  </md-grid-tile>
+		  
+		</md-grid-list>
+		</div>
+	</div>
+</div>
+
+</md-card>
+<md-card>
+
+</md-card>

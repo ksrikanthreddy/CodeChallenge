@@ -11,3 +11,7 @@
 .app-content{
 	padding: 8px;
 }
+.active-link{
+	background-color: #fafafa;
+    color: #000;
+}

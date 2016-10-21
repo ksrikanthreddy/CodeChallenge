@@ -1,0 +1,26 @@
+.movie-poster{
+	width: 40%;
+	float: left;
+	text-align: center;
+}
+.movie-poster img{
+	width: 90%;
+}
+.movie-details{
+	width: 60%;
+    float: left;
+}
+md-card{
+	display: flex;
+}
+.movie-title{
+    font-weight: bold;
+    font-size: 3em;
+    color: #1491ca;
+}
+.movie-crew-img{
+	width: 100%;
+}
+md-grid-tile{
+	cursor: pointer;
+}
