@@ -1,3 +1,27 @@
-<p>
-  card works!
-</p>
+<md-card class="flex">
+<div class="title">
+<span>Choose Higher or Lower</span>
+</div>
+<div class="cards-game">
+	<div class="dealer-card">
+		<h3>Dealer</h3>
+		<img class="dealer-image" src="http://www.imageno.com/thumbs/20161021/76ye3jj1hend.jpg">
+		<img [src]="dealerCard" *ngIf="dealerCard">
+	</div>
+	<div class="game-actions">
+		<div></div>
+		<button md-raised-button color="primary" *ngIf="!gameOver" (click)="play('HIGH')">Higher</button>
+		<button md-raised-button color="primary" *ngIf="!gameOver" (click)="play('LOW')">Lower</button>
+		<span *ngIf="message" [ngClass]="{'success': isSuccess, 'failure': !isSuccess}">{{message}}</span>
+		<br>
+		<br>
+		<button md-raised-button  color="primary" *ngIf="gameOver" (click)="tryAgain()">Try again</button>
+	</div>
+	<div class="user-card">
+		<h3>Me</h3>
+		<img [src]="userCard" [hidden]="!showUserCard">
+		<img class="user-image" src="http://www.imageno.com/thumbs/20161021/pz3nzs3dvpp2.jpg">
+		
+	</div>
+</div>
+</md-card>

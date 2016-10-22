@@ -1,0 +1,52 @@
+.title{
+	width: 100%;
+	text-align: center;
+}
+.title span{
+	font-weight: bold;
+    font-size: 2em;
+    color: #1491ca;
+}
+.cards-game{
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+}
+.dealer-card{
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+.dealer-card .dealer-image{
+    width: 25%;
+    vertical-align: top;
+}
+.user-card{
+	text-align: center;
+}
+.user-card .user-image{
+    width: 25%;
+    vertical-align: top;
+}
+.game-actions{
+	width: 33%;
+    float: left;
+    text-align: center;
+    margin-top: 50px
+}
+.success{
+	color: green;
+	font-size: 1.5em;
+    background: rgba(235, 250, 215, 0.9);
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 16px;
+}
+.failure{
+	color: red;
+    font-size: 1.5em;
+    background: antiquewhite;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 16px;
+}

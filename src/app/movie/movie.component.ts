@@ -24,7 +24,6 @@ export class MovieComponent implements OnInit {
   	this.movieOverview = res.overview;
   }
   movieCredits(res){
-    console.log(res.cast);
     this.movieCast = res.cast;
   }
   logError(err){
